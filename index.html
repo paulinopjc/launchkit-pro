@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LaunchKit Pro</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<nav>
+  <div class="nav-left">
+    <h1>LaunchKit</h1>
+  </div>
+  <div class="nav-right">
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="layout-btn" data-layout="saas">SaaS</button>
+    <button class="layout-btn" data-layout="product">Product</button>
+    <button class="layout-btn" data-layout="app">App</button>
+  </div>
+</nav>
+
+<main>
+  <!-- SaaS Layout -->
+  <section id="saas" class="layout-section">
+    <h2>Welcome to LaunchKit SaaS</h2>
+    <p>The perfect landing page for your SaaS product.</p>
+    <!-- Add content as you want -->
+  </section>
+
+  <!-- Product Layout -->
+  <section id="product" class="layout-section" hidden>
+    <h2>Welcome to LaunchKit Product</h2>
+    <p>Highlight your amazing product features here.</p>
+  </section>
+
+  <!-- App Layout -->
+  <section id="app" class="layout-section" hidden>
+    <h2>Welcome to LaunchKit App</h2>
+    <p>Showcase your mobile or desktop app.</p>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"LaunchKit Pro helped us go live in record time. Amazing design and code quality!"</p>
+        <strong>- Alex R.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"The theme toggle and layout switcher made customization a breeze."</p>
+        <strong>- Jamie L.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Clean, modern, and easy to adapt. Highly recommend for any SaaS startup."</p>
+        <strong>- Morgan S.</strong>
+      </div>
+      <button class="prev-btn" aria-label="Previous testimonial">&#10094;</button>
+      <button class="next-btn" aria-label="Next testimonial">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+      <label>
+        Name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="_replyto" required />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
+      <p class="form-status"></p>
+    </form>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
